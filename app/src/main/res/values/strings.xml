@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImageFilter</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_pick_image_choose_image">Tap here to choose image</string>
+    <string name="error_unable_to_load_image_file">Unable to load image file</string>
+    <string name="error_file_is_not_image_file">File is not image file</string>
+    <string name="message_file_already_loaded">This image is already loaded</string>
+</resources>
