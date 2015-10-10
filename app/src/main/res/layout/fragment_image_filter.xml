@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/image_filter_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/semitransparent"
+        custom:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageButton
+            android:id="@+id/pick_image_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_action_open" />
+
+        <ImageButton
+            android:id="@+id/filter_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_action_filter" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.test.imagefilter.ui.custom.ImageViewWithVerticalDivider
+        android:id="@+id/filter_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        custom:dividerColor="@android:color/white"
+        custom:dividerWidth="2dp" />
+
+    <ProgressBar
+        android:id="@+id/filter_progress_bar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="gone" />
+
+
+</android.support.design.widget.CoordinatorLayout>

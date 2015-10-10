@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ImageViewWithVerticalDivider">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="dividerColor" format="color" />
+        <attr name="showDivider" format="boolean" />
+    </declare-styleable>
+
+
+</resources>
